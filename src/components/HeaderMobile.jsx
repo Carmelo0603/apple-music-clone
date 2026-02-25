@@ -43,7 +43,7 @@ const HeaderMobile = ({ setSearchQuery }) => {
               <FaApple className="fs-3" />
             </Navbar.Brand>
 
-            <Button variant="link" className="text-decoration-none fw-bold p-0 btn-apple-mobile">
+            <Button variant="link" className="text-decoration-none fw-bold p-0 btn-apple-mobile" style={{ color: "#fa243c" }}>
               ACCEDI
             </Button>
           </>

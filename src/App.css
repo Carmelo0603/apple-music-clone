@@ -41,3 +41,37 @@
   color: white !important;
   box-shadow: 0 0 0 0.15rem rgba(250, 36, 60, 0.5) !important;
 }
+
+/* VOLUME CONTROL */
+input[type="range"].form-range.apple-slider {
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+input[type="range"].form-range.apple-slider::-webkit-slider-runnable-track {
+  background-color: #5c5c5e; /* Grigio Apple */
+  height: 4px;
+  border-radius: 4px;
+}
+
+input[type="range"].form-range.apple-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #ffffff;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin-top: -4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+input[type="range"].form-range.apple-slider:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+input[type="range"].form-range.apple-slider:focus::-webkit-slider-thumb {
+  box-shadow:
+    0 0 0 1px #000,
+    0 0 0 0.2rem rgba(250, 36, 60, 0.25);
+}

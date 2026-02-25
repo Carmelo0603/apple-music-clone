@@ -11,7 +11,7 @@ function App() {
   const [searchQuery, setSearchQuery] = useState("queen");
   return (
     <div className="text-white min-vh-100">
-      <HeaderMobile searchQuery={searchQuery}></HeaderMobile>
+      <HeaderMobile setSearchQuery={setSearchQuery}></HeaderMobile>
       <div className="playbar-wrapper">
         <DesktopPlayBar></DesktopPlayBar>
       </div>
