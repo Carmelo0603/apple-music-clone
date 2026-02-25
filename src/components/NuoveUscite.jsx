@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Spinner } from "react-bootstrap";
 import { fetchMusica } from "../services/deezerAPI";
 
 const NuoveUscite = ({ searchQuery }) => {
@@ -11,7 +11,7 @@ const NuoveUscite = ({ searchQuery }) => {
       setIsLoading(true);
       const query = searchQuery || "pop";
       const dati = await fetchMusica(query);
-      setBrani(dati.slice(0, 8));
+      setBrani(dati.slice(0, 12));
       setIsLoading(false);
     };
 

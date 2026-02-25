@@ -31,9 +31,9 @@ const DesktopPlayBar = () => {
       </div>
 
       <div className="d-flex justify-content-end align-items-center gap-3 w-25">
-        <div className="d-flex justify-content-center align-items-center">
-          <Form.Range className="apple-slider" style={{ width: "100px" }} />
-          <FiVolume2 className="mx-3"></FiVolume2>
+        <div className="d-flex justify-content-center align-items-center d-md-none d-lg-flex">
+          <Form.Range className="apple-slider" style={{ width: "60px" }} />
+          <FiVolume2 className="mx-3 me-5"></FiVolume2>
         </div>
         <Button className="btn-apple">ACCEDI</Button>
       </div>

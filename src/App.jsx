@@ -10,8 +10,8 @@ import DesktopPlayBar from "./components/DesktopPlayBar";
 function App() {
   const [searchQuery, setSearchQuery] = useState("queen");
   return (
-    <>
-      <HeaderMobile></HeaderMobile>
+    <div className="text-white min-vh-100">
+      <HeaderMobile searchQuery={searchQuery}></HeaderMobile>
       <div className="playbar-wrapper">
         <DesktopPlayBar></DesktopPlayBar>
       </div>
@@ -20,7 +20,7 @@ function App() {
         <Home searchQuery={searchQuery}></Home>
       </div>
       <MobilePlayBar></MobilePlayBar>
-    </>
+    </div>
   );
 }
 
