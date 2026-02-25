@@ -1,7 +1,7 @@
 import { Nav, Form, InputGroup } from "react-bootstrap";
 import { FaApple } from "react-icons/fa";
 
-const SideBarDesktop = () => {
+const SideBarDesktop = ({ setSearchQuery }) => {
   return (
     <div
       className="d-none d-md-flex flex-column bg-dark"
@@ -33,6 +33,7 @@ const SideBarDesktop = () => {
             aria-label="Cerca"
             aria-describedby="search-icon"
             style={{ fontSize: "14px", background: "black" }}
+            onChange={(e) => setSearchQuery(e.target.value)}
           />
         </InputGroup>
       </div>

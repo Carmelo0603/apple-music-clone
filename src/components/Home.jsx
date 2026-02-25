@@ -4,13 +4,13 @@ import NuoviEpisodiRadio from "./NuoviEpisodiRadio";
 import NuoveUscite from "./NuoveUscite";
 import AltroDaEsplorare from "./AltroDaEsplorare";
 
-const Home = () => {
+const Home = ({ searchQuery }) => {
   return (
     <div className="bg-dark min-vh-100 pb-5" style={{ paddingTop: "10px" }}>
       <Container fluid className="px-3 px-md-4">
         <NovitaSection />
         <NuoviEpisodiRadio></NuoviEpisodiRadio>
-        <NuoveUscite></NuoveUscite>
+        <NuoveUscite searchQuery={searchQuery}></NuoveUscite>
         <AltroDaEsplorare></AltroDaEsplorare>
       </Container>
     </div>
