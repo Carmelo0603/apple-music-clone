@@ -6,7 +6,7 @@ const MobilePlayBar = () => {
   return (
     <Container
       fluid
-      className="fixed-bottom bg-dark text-white d-flex justify-content-between align-items-center py-2 px-3"
+      className="d-md-none fixed-bottom bg-dark text-white d-flex justify-content-between align-items-center py-2 px-3"
       style={{ height: "70px", borderTop: "1px solid #333" }}
     >
       <div className="d-flex align-items-center">

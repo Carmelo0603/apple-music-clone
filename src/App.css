@@ -1,0 +1,14 @@
+@media (min-width: 768px) {
+  .main-wrapper {
+    margin-left: 260px;
+    margin-top: 60px;
+  }
+}
+
+[data-bs-theme="dark"] {
+  --bs-body-bg: #000000;
+  --bs-body-color: #ffffff;
+  --bs-dark: #1c1c1e;
+  --bs-dark-rgb: 28, 28, 30;
+  --bs-primary: #fa243c;
+}

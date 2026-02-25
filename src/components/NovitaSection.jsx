@@ -1,32 +1,31 @@
+import { Row, Col, Image } from "react-bootstrap";
 import img1a from "../assets-3/images/1a.png";
 import img1b from "../assets-3/images/1b.png";
 
 const NovitaSection = () => {
   return (
-    <section className="mb-5">
+    <section className="mb-5 mt-4">
       <h1 className="text-white fw-bold mb-3 pb-2 border-bottom border-secondary" style={{ fontSize: "34px" }}>
         Novità
       </h1>
 
-      <div className="d-flex flex-nowrap overflow-x-auto gap-3 pb-2" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
-        {/* Card 1 */}
-        <div className="flex-shrink-0" style={{ width: "85vw", maxWidth: "500px" }}>
+      <Row className="flex-nowrap flex-md-wrap overflow-x-auto g-3 pb-2 mx-0" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
+        <Col xs={11} md={6}>
           <div className="text-secondary fw-bold" style={{ fontSize: "11px", letterSpacing: "1px" }}>
             NUOVA STAZIONE RADIO
           </div>
           <div className="text-white mb-2 text-truncate fs-5">Rilassati, al resto pensiamo noi. Ascolta Apple Music Chill</div>
-          <img src={img1a} alt="Apple Music Chill" className="img-fluid rounded-4 w-100" style={{ objectFit: "cover" }} />
-        </div>
+          <Image src={img1a} alt="Apple Music Chill" fluid rounded className="w-100" style={{ objectFit: "cover" }} />
+        </Col>
 
-        {/* Card 2 */}
-        <div className="flex-shrink-0" style={{ width: "85vw", maxWidth: "500px" }}>
+        <Col xs={11} md={6}>
           <div className="text-secondary fw-bold" style={{ fontSize: "11px", letterSpacing: "1px" }}>
             NUOVA STAZIONE RADIO
           </div>
           <div className="text-white mb-2 text-truncate fs-5">Ecco la nuova casa della musica latina</div>
-          <img src={img1b} alt="Musica Latina" className="img-fluid rounded-4 w-100" style={{ objectFit: "cover" }} />
-        </div>
-      </div>
+          <Image src={img1b} alt="Musica Latina" fluid rounded className="w-100" style={{ objectFit: "cover" }} />
+        </Col>
+      </Row>
     </section>
   );
 };
