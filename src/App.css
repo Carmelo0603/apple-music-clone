@@ -12,3 +12,32 @@
   --bs-dark-rgb: 28, 28, 30;
   --bs-primary: #fa243c;
 }
+
+.btn-apple {
+  background-color: #fa243c;
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 6px 16px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-apple:hover {
+  background-color: #ae1625;
+  color: #ffffff;
+}
+
+.apple-slider {
+  --bs-form-range-track-bg: #3a3a3c;
+  --bs-form-range-track-height: 4px;
+  --bs-form-range-thumb-bg: #ffffff;
+  --bs-form-range-thumb-focus-box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+  --bs-form-range-thumb-active-bg: #d1d1d6;
+}
+
+.custom-search:focus {
+  background-color: #2c2c2e !important;
+  color: white !important;
+  box-shadow: 0 0 0 0.15rem rgba(250, 36, 60, 0.5) !important;
+}

@@ -7,11 +7,13 @@ const SideBarDesktop = () => {
       className="d-none d-md-flex flex-column bg-dark"
       style={{
         height: "100vh",
+        width: "260px",
         position: "fixed",
         top: 0,
         left: 0,
         borderRight: "1px solid #333",
         zIndex: 1000,
+        paddingTop: "60px",
       }}
     >
       <div className="d-flex align-items-center mb-4 mt-4 px-4 text-white">
@@ -21,16 +23,16 @@ const SideBarDesktop = () => {
 
       <div className="mb-4 px-3">
         <InputGroup>
-          <InputGroup.Text className="bg-secondary border-0 text-light px-2" id="search-icon">
+          <InputGroup.Text className=" border-0 px-2" id="search-icon" style={{ color: "#fa243c", background: "black" }}>
             <i className="bi bi-search"></i>
           </InputGroup.Text>
           <Form.Control
             type="search"
             placeholder="Cerca"
-            className="bg-secondary border-0 text-light shadow-none"
+            className=" border-0 text-light shadow-none custom-search"
             aria-label="Cerca"
             aria-describedby="search-icon"
-            style={{ fontSize: "14px" }}
+            style={{ fontSize: "14px", background: "black" }}
           />
         </InputGroup>
       </div>
@@ -40,7 +42,7 @@ const SideBarDesktop = () => {
           <i className="bi bi-house-door me-3 fs-5"></i> Home
         </Nav.Link>
 
-        <Nav.Link href="#" className="d-flex align-items-center rounded-2 p-2 px-3" style={{ backgroundColor: "#333", color: "#fa243c" }}>
+        <Nav.Link href="#" className=" text-white d-flex align-items-center rounded-2 p-2 px-3">
           <i className="bi bi-grid-fill me-3 fs-5"></i> Novità
         </Nav.Link>
 

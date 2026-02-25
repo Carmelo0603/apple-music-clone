@@ -1,7 +1,7 @@
-import "./App.css";
 import MobilePlayBar from "./components/MobilePlayBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import "./App.css";
 import HeaderMobile from "./components/HeaderMobile";
 import Home from "./components/Home";
 import SideBarDesktop from "./components/SideBarDesktop";
@@ -14,7 +14,7 @@ function App() {
         <DesktopPlayBar></DesktopPlayBar>
       </div>
       <SideBarDesktop></SideBarDesktop>
-      <div className="main-wrapper pb-5">
+      <div className="main-wrapper ">
         <Home></Home>
       </div>
       <MobilePlayBar></MobilePlayBar>

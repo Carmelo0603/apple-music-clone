@@ -1,4 +1,4 @@
-import { Button } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import { IoPlayBackSharp, IoPlayForward } from "react-icons/io5";
 import { FaPlay, FaApple } from "react-icons/fa";
 import { FaRepeat, FaShuffle } from "react-icons/fa6";
@@ -31,8 +31,11 @@ const DesktopPlayBar = () => {
       </div>
 
       <div className="d-flex justify-content-end align-items-center gap-3 w-25">
-        <FiVolume2></FiVolume2>
-        <Button>ACCEDI</Button>
+        <div className="d-flex justify-content-center align-items-center">
+          <Form.Range className="apple-slider" style={{ width: "100px" }} />
+          <FiVolume2 className="mx-3"></FiVolume2>
+        </div>
+        <Button className="btn-apple">ACCEDI</Button>
       </div>
     </div>
   );
