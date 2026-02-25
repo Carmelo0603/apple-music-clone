@@ -49,7 +49,7 @@ input[type="range"].form-range.apple-slider {
 }
 
 input[type="range"].form-range.apple-slider::-webkit-slider-runnable-track {
-  background-color: #5c5c5e; /* Grigio Apple */
+  background-color: #5c5c5e;
   height: 4px;
   border-radius: 4px;
 }
